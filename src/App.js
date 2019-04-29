@@ -1,26 +1,24 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, {Component} from 'react';
 import './App.css';
+import Header from './Component/Header';
+import Footer from './Component/Footer';
+import Content from './Component/Content';
 
-function App() {
+class App extends Component{
+  constructor(props){
+    super(props);
+    this.state={pokemons : ""}
+  }
+  render() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+      <div className="App title container-fluid" class="App-bg" >
+        <Header/>
+        <Content/>
+        <Footer/>
+        {/* <Button color="primary" onClick={() => this.state.item_name=Pikachu'}>{this.props.buttonLabel}Add to Cart</Button> */}
+      </div>
+    );
+  }
+  
 }
-
 export default App;

@@ -1,6 +1,9 @@
 .App {
   text-align: center;
 }
+.App-bg{
+  background : url(https://cdna.artstation.com/p/assets/images/images/003/324/270/large/kevin-manguera-pokemon-bg.jpg?1472448052);
+}
 
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
